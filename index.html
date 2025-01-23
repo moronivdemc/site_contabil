@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FR Morais Contabilidade</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        img {
+          max-width: 100%; 
+          height: auto;
+        }
+        /*Cartões*/
+        .cards-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+        .card {
+            background: color #1e2b38;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            border-radius: 10px
+            width: 300px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        .card img {
+            width: 50px;
+            margin-bottom: 10px;
+        }
+        .card h3 {
+            margin: 10px 0;
+            font-size: 1.5em;
+        }
+        .card p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+    </style>    
+</head>
+<body>
+    <!--Cabeçalho-->
+    <header class="header">
+        <div class="top-bar">
+            <div class="contact-info">
+                <img src="imagens\capa_site.PNG">
+                <!--<span>Fale Conosco: (21)1234-6789</span><br>
+                <span> Atendimento: Segunda a Sexta das 8h Às 17h</span>-->
+        <div class="container">
+            <!--<h1><u>FR Morais Contabilidade</u></h1>-->
+            <nav>
+                <!--<ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>-->
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h2>Simplificando a Contabilidade para Você.</h2>
+            <p>Oferecemos soluções contábeis completas para sua empresa.</p>
+        </div>
+    </section>
+    <!--Seção de cartões com classe 'cards'-->
+    <section id="valores" class="cards">
+        <div class="card">
+            <!--<img src="C:\Users\Morôni\OneDrive\Área de Trabalho\site do tio\imagens\card.png" alt="Confiança">-->
+            <h3>Confiança</h3>
+            <p> A confiança é o alicerce de nosso trabalho. Acreditamos em uma comunicação aberta e honesta, garantindo que nossos clientes se sintam seguros em todas as etapas do processo.</p>
+        </div>
+        <div class="card">
+            <!--<img src="C:\Users\Morôni\OneDrive\Área de Trabalho\site do tio\imagens\card.png" alt="Credibilidade">-->
+            <h3>Credibilidade</h3>
+            <p>Nossa credibilidade é comprovada por resultados e pela satisfação de nossos clientes, que nos escolhem por nossa expertise e profissionalismo, garantindo a segurança de nossos clientes.</p>
+        </div>
+        <div class="card">
+            <!--<img src="C:\Users\Morôni\OneDrive\Área de Trabalho\site do tio\imagens\card.png" alt="Ética">-->
+            <h3>Ética</h3>
+            <p>Acreditamos que a ética é fundamental para a construção de um relacionamento de longo prazo com nossos clientes. Nosso trabalho é guiado por princípios éticos e morais.</p>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="imagens\contabilidade_geral.png" alt="Contabilidade Geral">
+                    <h3>Contabilidade Geral</h3>
+                    <p> A ferramenta essencial para acompanhar a saúde financeira da sua empresa, oferecendo transparência e controle.</p>
+                    <!--<a href="#">saiba mais</a>-->
+                </div>
+                    <div class="service-card">
+                    <img src="imagens\planejamento-tributario.png" alt="Planejamento Tributário">
+                    <h3>Planejamento Tributário</h3>
+                    <p>A estratégia que ajuda sua empresa a pagar os impostos corretos, no momento certo, maximizando seus resultados financeiros.</p>
+                </div>
+                <div class="service-card">
+                    <img src="imagens\folha_de_pagamento.png" alt="Folha de Pagamento">
+                    <h3>Folha de Pagamento</h3>
+                    <p>A garantia de que seus colaboradores receberão o valor correto e em dia, além de proporcionar transparência e organização na gestão de pessoal.</p>
+                </div>
+                <div class="service-card">
+                    <img src="imagens\consultoria_financeira.png" alt="Consultoria Financeira">  
+                    <h3>Consultoria Financeira</h3>
+                    <p>O guia seguro para alcançar seus objetivos financeiros, com planejamento, organização e controle.</p>
+                </div>      
+            </div>    
+            <!--<ul>
+                <li>Contabilidade Geral</li>
+                <li>Planejamento Tributário</li>
+                <li>Folha de Pagamento</li>
+                <li>Consultoria Financeira</li>
+            </ul>-->
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos um escritório contábil com mais de 10 de experiencia, focados em atender as necessidades específicas de cada cliente.<p>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="emial" name="email" required> 
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 FR Morais Contabilidade. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script src="scripts.js"></script> 
+</body>
+</html>
